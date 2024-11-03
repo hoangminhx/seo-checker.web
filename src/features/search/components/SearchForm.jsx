@@ -73,7 +73,7 @@ const SearchForm = ({ onSearch }) => {
               <FFFormFeedback name='range' />
             </FormGroup>
             <Button color='primary' block type='submit' disabled={submitting}>
-              <i className='fa-solid fa-magnifying-glass'></i>&nbsp;{'Search'}
+              <i className='fa-solid fa-magnifying-glass'></i>&nbsp;{submitting ? 'Searching' : 'Search'}
             </Button>
           </Form>)
       }}
